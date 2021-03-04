@@ -26,8 +26,8 @@ struct Sonar {
         return distance;
     }
 
-    Opin trig;
-    Ipin echo;
+    const Opin trig;
+    const Ipin echo;
 };
 
 #endif
