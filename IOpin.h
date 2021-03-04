@@ -15,10 +15,6 @@ struct Ipin { // Input pin
         return analogRead(pin);
     }
 
-    bool is_on() const {
-        return read()==HIGH;
-    }
-
     const int pin;
 };
 
@@ -38,6 +34,12 @@ struct Opin { // Output pin
 
     void off() const {
         digitalWrite(pin, LOW);
+    }
+
+    void pulse(int t) const {
+        on();
+        delay(t);
+        off();
     }
 
     const int pin;
