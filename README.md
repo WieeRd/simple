@@ -1,9 +1,9 @@
-# simple
+# Simple
 Collection of simple & useful arduino classes  
-Usage: Just put .h files in your project folder
+1. Copy these files in your project folder  
+2. Add `#include "simple.h"` on top of your .ino file  
 
-### IOpin.h - general input, output pins
-`#include "IOpin.h"`  
+### Ipin/Opin - general input, output pins
 ```c++
 Ipin button(3);
 
@@ -23,8 +23,7 @@ led.off();
 led.pulse(500); // millisecond
 ```
 
-### Sonar.h - for common ultrasonic sensors
-`#include "Sonar.h"`
+### Sonar - for common ultrasonic sensors
 ```c++
 Sonar S(3, 4);
 
@@ -38,8 +37,7 @@ S.trig.pulse(100);
 S.echo.read();
 ```
 
-### RGB.h - control all 3 pins of RGB led at once
-`#include "RGB.h"`
+### RGB - control all 3 pins of RGB led at once
 ```c++
 RGB led(3,4,5);
 
