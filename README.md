@@ -17,9 +17,10 @@ Opin led(4);
 
 led.pin; // 4
 led.on();
+led.on(120); // pwm only: 0~255
 led.off();
-led.on(120); // 0~255 (pwm pin only)
-led.pulse(500); // unit: millisecond
+
+led.pulse(500); // millisecond
 ```
 
 ### Sonar.h - for common ultrasonic sensors
@@ -29,9 +30,28 @@ Sonar S(3, 4);
 
 /* time it took for the pulse to return */
 S.measure_raw(); // microseconds (unsigned long)
-/* distance between S and object */
+/* distance between sensor and object */
 S.measure(); // cm (float)
 
-S.trig.on();    // Sonar.trig is Opin object
-S.echo.is_on(); // Sonar.echo is Ipin object
+/* access trig, echo as IOpin object */
+S.trig.pulse(100);
+S.echo.read();
+```
+
+### RGB.h - control all 3 pins of RGB led at once
+`#include "RGB.h"`
+```c++
+RGB led(3,4,5);
+
+led.on();
+led.on(0, 128, 255); // r, g, b
+led.off();
+
+led.pulse(500);
+led.pulse(0, 128, 255, 500); // r, g, b, delay
+
+/* access each led as Opin object */
+led.R.pin;
+led.G.on();
+led.B.off();
 ```

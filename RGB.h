@@ -1,6 +1,9 @@
 #ifndef RGB_H
 #define RGB_H
 
+#include "IOpin.h"
+
+ // TODO: calibrated RGB maybe?
 struct RGB {
     RGB(int r, int g, int b):
         R(r), G(g), B(b) {;}

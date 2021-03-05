@@ -3,7 +3,7 @@
 
 struct Ipin { // Input pin
 
-    Ipin(const int p): pin(p) {
+    Ipin(int p): pin(p) {
         pinMode(pin, INPUT);
     }
 
@@ -20,7 +20,7 @@ struct Ipin { // Input pin
 
 struct Opin { // Output pin
 
-    Opin(const int p): pin(p) {
+    Opin(int p): pin(p) {
         pinMode(pin, OUTPUT);
     }
 
