@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "simple.h"
 /* "simple" library by WieeRd       *
  * https://github.com/WieeRd/simple */
@@ -44,7 +45,7 @@ Sonar::Sonar(int t, int e):
 
 unsigned long Sonar::measure_raw() const {
     trig.on();
-    delayMicroseconds(t);
+    delayMicroseconds(10);
     trig.off();
     delay = pulseIn(echo.pin, HIGH); 
     return delay;
