@@ -1,6 +1,6 @@
 # Simple
 Collection of simple & useful arduino classes  
-1. Copy these files in your project folder  
+1. Put `simple.h`, `simple.cpp` in your project folder  
 2. Add `#include "simple.h"` on top of your .ino file  
 
 ### Ipin/Opin - general input, output pins

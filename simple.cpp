@@ -1,4 +1,6 @@
 #include "simple.h"
+/* "simple" library by WieeRd       *
+ * https://github.com/WieeRd/simple */
 
 /* input pin */
 Ipin::Ipin(int p): pin(p) {
