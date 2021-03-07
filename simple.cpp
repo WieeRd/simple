@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "simple.h"
-/* "simple" library by WieeRd       *
- * https://github.com/WieeRd/simple */
+// "simple" library by WieeRd (v1.0)
+// https://github.com/WieeRd/simple
 
 /* input pin */
 Ipin::Ipin(int p): pin(p) {
@@ -47,13 +47,13 @@ unsigned long Sonar::measure_raw() const {
     trig.on();
     delayMicroseconds(10);
     trig.off();
-    delay = pulseIn(echo.pin, HIGH); 
-    return delay;
+    auto dt = pulseIn(echo.pin, HIGH); 
+    return dt;
 }
 
 float Sonar::measure() const {
-    float delay = measure_raw();
-    float distance = float(delay) * 340 / 10000 / 2;  
+    auto dt = measure_raw();
+    float distance = float(dt) * 340 / 10000 / 2;  
     return distance;
 }
 

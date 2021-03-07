@@ -1,7 +1,7 @@
 #ifndef SIMPLE_H
 #define SIMPLE_H
-/* "simple" library by WieeRd       *
- * https://github.com/WieeRd/simple */
+// "simple" library by WieeRd (v1.0)
+// https://github.com/WieeRd/simple
 
 struct Ipin {
     Ipin(int p);
