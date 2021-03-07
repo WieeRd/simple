@@ -1,7 +1,11 @@
 # Simple
 Collection of simple & useful arduino classes  
-1. Put `simple.h`, `simple.cpp` in your project folder  
-2. Add `#include "simple.h"` on top of your .ino file  
+1. Download .zip file from latest [release](https://github.com/WieeRd/simple/releases)
+2. Arduino IDE: Sketch -> Include Library -> Add .ZIP Library
+3. Add `#include <simple.h>` on top of your code(.ino file)
+
+Or you can just put `simple.h` & `simple.cpp` in your project folder,  
+and add `#include "simple.h"` on top of your code. (use "" not <>)
 
 ### Ipin/Opin - general input, output pins
 ```c++
