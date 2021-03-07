@@ -1,6 +1,6 @@
 # Simple
 Collection of simple & useful arduino classes  
-1. Download .zip file from latest [release](https://github.com/WieeRd/simple/releases)
+1. Download simple.zip file from latest [release](https://github.com/WieeRd/simple/releases)
 2. Arduino IDE: Sketch -> Include Library -> Add .ZIP Library
 3. Add `#include <simple.h>` on top of your code(.ino file)
 
